@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/tailwindcss.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+  </head>
+  <body class="bg-white">
+    <nav class="flex flex-wrap items-center justify-between p-6 bg-teal-500">
+      <div class="flex items-center flex-shrink-0 mr-6 text-white">
+        <svg class="w-8 h-8 mr-2 fill-current" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" /></svg>
+        <span class="text-xl font-semibold tracking-tight">Simple Todo</span>
+      </div>
+    </nav>
+
+    <main class="w-auto p-1 mx-2 mt-3 bg-gray-300 rounded md:w-1/2 md:m-auto md:mt-5">
+      <input class="block w-full px-4 py-3 text-gray-700 bg-white border rounded focus:outline-none focus:bg-white focus:border-gray-500" type="text" placeholder="insert todo" />
+      <div class="todo"></div>
+      <!-- end-todo -->
+      <div id="snackbar" class="fixed z-10 px-6 py-4 text-center text-white bg-teal-500 rounded-sm">sime text here</div>
+    </main>
+    <script src="/javascripts/fetchApi.js"></script>
+    <script src="/javascripts/todo.js"></script>
+  </body>
+</html>
